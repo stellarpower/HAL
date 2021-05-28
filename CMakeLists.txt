@@ -11,6 +11,10 @@ endif()
 
 ################################################################################
 
+
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+
 option( BUILD_SHARED_LIBS "Build shared libraries." ON )
 
 include_directories( ${CMAKE_CURRENT_BINARY_DIR} )
